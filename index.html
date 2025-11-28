@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Client Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      /* Scrollbar Styling */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #cbd5e1; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #94a3b8; 
+      }
+      
+      /* Markdown Enhancements */
+      .markdown-body {
+        color: #334155;
+      }
+      .markdown-body h1 { 
+        font-size: 2rem; 
+        font-weight: 800; 
+        color: #0f172a; 
+        margin-bottom: 2rem; 
+        padding-bottom: 1rem;
+        border-bottom: 1px solid #e2e8f0;
+        letter-spacing: -0.025em;
+      }
+      .markdown-body h2 { 
+        font-size: 1.5rem; 
+        font-weight: 700; 
+        color: #1e293b; 
+        margin-top: 3rem; 
+        margin-bottom: 1.25rem; 
+        letter-spacing: -0.025em;
+      }
+      .markdown-body h3 { 
+        font-size: 1.25rem; 
+        font-weight: 600; 
+        color: #1e293b; 
+        margin-top: 2rem; 
+        margin-bottom: 1rem; 
+      }
+      .markdown-body p { 
+        margin-bottom: 1.25rem; 
+        line-height: 1.75; 
+        font-size: 1rem;
+      }
+      .markdown-body ul, .markdown-body ol { 
+        margin-bottom: 1.5rem; 
+        padding-left: 1.5rem; 
+      }
+      .markdown-body li { 
+        margin-bottom: 0.5rem; 
+      }
+      .markdown-body strong {
+        color: #0f172a;
+        font-weight: 600;
+      }
+      
+      /* Code Blocks */
+      .markdown-body code { 
+        background-color: #f1f5f9; 
+        padding: 0.2em 0.4em; 
+        border-radius: 0.25rem; 
+        font-family: 'JetBrains Mono', monospace; 
+        font-size: 0.85em; 
+        color: #475569; 
+        font-weight: 500;
+      }
+      .markdown-body pre { 
+        background-color: #0f172a; 
+        color: #f8fafc; 
+        padding: 1.5rem; 
+        border-radius: 0.75rem; 
+        overflow-x: auto; 
+        margin: 1.5rem 0; 
+        border: 1px solid #1e293b;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+      .markdown-body pre code { 
+        background-color: transparent; 
+        color: inherit; 
+        padding: 0; 
+        font-size: 0.875rem; 
+        line-height: 1.7;
+        font-weight: 400;
+      }
+      
+      .markdown-body blockquote { 
+        border-left: 4px solid #6366f1; 
+        padding-left: 1rem; 
+        font-style: italic; 
+        color: #64748b; 
+        background: #f8fafc;
+        padding: 1rem 1rem 1rem 1.5rem;
+        border-radius: 0 0.5rem 0.5rem 0;
+        margin: 1.5rem 0;
+      }
+      
+      /* Animations */
+      @keyframes fade-in {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fade-in {
+        animation: fade-in 0.3s ease-out forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-markdown": "https://aistudiocdn.com/react-markdown@^10.1.0",
+    "remark-gfm": "https://aistudiocdn.com/remark-gfm@^4.0.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50 text-gray-900 h-screen overflow-hidden antialiased selection:bg-indigo-100 selection:text-indigo-900">
+    <div id="root" class="h-full"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

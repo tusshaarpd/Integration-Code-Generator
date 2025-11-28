@@ -1,0 +1,5 @@
+{
+  "name": "API Client Generator",
+  "description": "Generate production-ready API client libraries and integration code from documentation.",
+  "requestFramePermissions": []
+}
